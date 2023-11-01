@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Merriweather, sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+   width: 100%;
+   min-height: 100vh;
+   background-image: linear-gradient(180deg, rgba(216, 116, 116, 0.842),rgba(166, 174, 222, 0.91)), url('images/img.jpg');
+   background-position: center;
+   background-size: cover;
+   padding: 10px 8%;
+   text-align: center;
+   color: #fff;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.btn {
+    background: linear-gradient(#313662, #343c8a);
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 16px 30px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.content {
+    margin: 30px auto 0;
+}
+
+.content h1 {
+    padding: 20px;
+    color: #212121fe;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #111954;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.content .act {
+    font-size: 2.5rem;
+    font-family: Poppins, sans-serif;
+    color: #bd0d0d;
+    font-weight: 900;
+    padding-top: 0;
+}
+
+.content p {
+    color: #111954;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .logo {
+        width: 150px;
+    }
+    .btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .content h1 {
+        font-size: 1.3rem;
+    }
+
+    .content h2 {
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+    }
+    
+    .content .act {
+        font-size: 1.5rem;
+    }
+    
+    .content p {
+        font-size: 1.2rem;
+    }
+    .content {
+        margin: 20% auto 0;
+    }
+}
