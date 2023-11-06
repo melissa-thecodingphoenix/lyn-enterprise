@@ -33,26 +33,36 @@ body {
     cursor: pointer;
 }
 
-.hero {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    padding: 50px 8%;
-    text-align: center;
-    
-}
-.hero .content {
-    margin: 30px 0;
-    width: 50%;
-    background: linear-gradient(180deg, rgba(136, 148, 213, 0.446), rgba(255, 255, 255, 0.449));
+.content {
+    background: linear-gradient(180deg, rgba(155, 192, 234, 0.718), rgba(155, 172, 234, 0.718) );
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(1, 31, 100, 0.36);
+    line-height: 2;
+    margin-top: 3rem;
 }
 
 .content h1 {
-    padding: 20px;
-    color: #212121fe;
-    font-size: 1.5rem;
-    font-weight: 900;
+    padding-bottom: 20px;
+    color: transparent;
+    font-size: 1.6rem;
+    font-weight: 700;
     font-family: Poppins, sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    animation: colorchange 6s infinite alternate;
+}
+
+@keyframes colorchange {
+    0% {
+        color: #c80c0c;
+    }
+ 
+    100% {
+        color: #082671;
+    }
 }
 
 .content h2 {
@@ -66,16 +76,30 @@ body {
 .content .act {
     font-size: 2.5rem;
     font-family: Poppins, sans-serif;
-    color: #bd0d0d;
+    color: transparent;
     font-weight: 900;
     padding-top: 0;
+    animation: effect 2s linear infinite;
+}
+
+@keyframes effect {
+    0% {
+        background: linear-gradient(
+            #022b27, #000FFF);
+        -webkit-background-clip: text;
+    }
+ 
+    100% {
+        background: linear-gradient(
+            #d50404, #022b27);
+        -webkit-background-clip: text;
+    }
 }
 
 .content p {
     color: #111954;
-    font-style: italic;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding-bottom: 20px;
 }
 
@@ -86,6 +110,7 @@ body {
     margin: 10px 0 20px;
     border-radius: 20px;
     border: none;
+    background-color: #bfc6fb;
     box-shadow:3px 8px 9px rgba(12, 20, 65, 0.871);
     cursor: pointer;
 }
@@ -101,19 +126,15 @@ body {
     .header .logo {
         width: 130px;
     }
-    .hero {
-        padding: 50px 3%;
-    }
-    .hero .content {
+    .content {
         width: 100%;
-        margin: 0;
     }
     .content h1 {
         font-size: 1.3rem;
     }
 
     .content h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         padding-bottom: 20px;
     }
     
@@ -122,7 +143,7 @@ body {
     }
     
     .content p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .content .btn {
         color: #111954;
